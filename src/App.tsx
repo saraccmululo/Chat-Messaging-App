@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Auth from './components/Auth';
 import { useChatStore } from './store/chatStore';
 import { supabase } from './supabaseClient';
+import { useState } from 'react';
 
 function App() {
   const { user, setUser } = useChatStore();
