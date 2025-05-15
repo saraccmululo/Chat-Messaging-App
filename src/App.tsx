@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Auth from './components/Auth';
 import { useChatStore } from './store/chatStore';
 import { supabase } from './supabaseClient';
-import { useState } from 'react';
+import Dashboard from './components/Dashboard';
 
 function App() {
   const { user, setUser } = useChatStore();
@@ -27,7 +27,7 @@ function App() {
   return <Auth/>;
   }
 
-  return <div> Chat App</div>
+  return <Dashboard/>
 }
 
 export default App
