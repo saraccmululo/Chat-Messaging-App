@@ -20,7 +20,7 @@ const fetchMessages = async (roomId: number): Promise<Message[]> => {
     .order("created_at", { ascending: true });
 
   if (error) throw Error(error.message);
-
+  
   return data as Message[];
 };
 
