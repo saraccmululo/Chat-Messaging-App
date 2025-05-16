@@ -1,10 +1,8 @@
 import {create} from 'zustand';
-
 interface User {
   id: string;
   email: string;
 }
-
 interface Room {
   id: number;
   name: string;
