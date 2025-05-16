@@ -1,4 +1,4 @@
-import { QueryClient, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useChatStore } from "../store/chatStore";
 import { supabase } from "../supabaseClient";
 import { useEffect } from "react";
@@ -20,7 +20,7 @@ const fetchMessages = async (roomId: number): Promise<Message[]> => {
     .order("created_at", { ascending: true });
 
   if (error) throw Error(error.message);
-  
+
   return data as Message[];
 };
 
