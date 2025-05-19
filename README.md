@@ -1,5 +1,6 @@
 # Chat-App
-Built a Chat Message App following a React course tutorial. Utilized React Query, React Hook Form, React Route, Zustand and SupaBase.
+Project URL https://chat-messaging-app-kappa.vercel.app/
+Built a Chat Message App following a React course tutorial. Utilized React Query, React Hook Form, React Route, Zustand, and Supabase.
 
 
 NOTE: Improved the useQuery queryFn function by rewriting the original function without using the ! non-null assertion.
