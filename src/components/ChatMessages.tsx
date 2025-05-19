@@ -24,7 +24,7 @@ const fetchMessages = async (roomId: number): Promise<Message[]> => {
   return data as Message[];
 };
 
-const ChatMessage = () => {
+const ChatMessages = () => {
   const { currentRoom, user } = useChatStore();
   const queryClient = useQueryClient();
   const {
@@ -103,4 +103,4 @@ const ChatMessage = () => {
   );
 };
 
-export default ChatMessage;
+export default ChatMessages;
